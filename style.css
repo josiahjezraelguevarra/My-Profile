@@ -12,7 +12,7 @@
 
 html {
     font-size: 62.5%;
-     scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -329,11 +329,12 @@ span {
     text-align: center;
 }
 
-.project-content video {
+.project-content iframe {
     margin: 2rem;
     margin-top: -0.5rem;
-    width: 90%;
-    max-width: 100%;
+    width: 80%;       
+    max-width: 560px; 
+    height: 315px; 
     border-radius: 10px;
     box-shadow: 0 0 15px #000;
 }
