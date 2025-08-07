@@ -330,13 +330,21 @@ span {
 }
 
 .project-content iframe {
-    margin: 2rem;
-    margin-top: -0.5rem;
-    width: 80%;       
-    max-width: 560px; 
-    height: 315px; 
+    width: 100%;
+    max-width: 480px; /* or 420px to be safe */
+    height: auto;
+    aspect-ratio: 16 / 9;
     border-radius: 10px;
     box-shadow: 0 0 15px #000;
+    margin: 1rem auto;
+    display: block;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    justify-items: center;
 }
 
 .project-content h2 {
